@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="calc1.css">
+    <title> Apna Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <input class="input" type="text" id="disp" placeholder="CALCULATOR">
+        <div class="buttons">
+            <div class="brackets" >
+                <div onclick="bracketfun('(')" >(</div>
+                <div onclick="bracketfun(')')">)</div>
+                <div class="equal" id="result">
+                    <p onclick="equalclick('')">=</p>
+                </div>
+            </div>
+            
+            <!-- <div class="area">Bodmas cond. Appl.</div> -->
+            <div class="operators" >
+                
+                <div onclick="numberclick('-')">-</div>
+                <div onclick="numberclick('*')">*</div>
+                <div onclick="numberclick('/')">/</div>
+            </div>
+            <div class="numbersclass" id="numberid">
+                <div class="numbers">
+                    <div onclick="numberclick('7')">7</div>
+                    <div onclick="numberclick('8')">8</div>
+                    <div onclick="numberclick('9')">9</div>
+                </div>
+                <div class="numbers">
+                    <div onclick="numberclick('4')">4</div>
+                    <div onclick="numberclick('5')">5</div>
+                    <div onclick="numberclick('6')">6</div>
+                </div>
+                <div class="numbers">
+                    <div onclick="numberclick('1')">1</div>
+                    <div onclick="numberclick('2')">2</div>
+                    <div onclick="numberclick('3')">3</div>
+                </div>
+                <div class="numbers">
+                    <div onclick="numberclick('0')">0</div>
+                    <div onclick="numberclick('+')" >+</div>
+                    <!-- <div onclick="numberclick('.')">.</div> -->
+                    <div id="clear"  onclick="clearinput('')">AC</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Copyright © RTW 2019. All RR.</p>
+      </footer>
+    <!-- <input type="button" value="BackSpace" style="height:50px; width:480px; border-radius: 10px;" onclick="backspc()"> -->
+
+</body>
+<script src="calc1.js"></script>
+
+</html>
